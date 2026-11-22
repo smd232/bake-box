@@ -1,0 +1,170 @@
+/* ---------- Colours (easy to change here) ---------- */
+:root {
+  --cream: #eee1ba;
+  --sand: #f0d7a7;
+  --terracotta: #c37960;
+  --brown: #894e3f;
+  --clay: #9c634f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--brown);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ---------- Header ---------- */
+.header {
+  background: var(--brown);
+  border-radius: 20px;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  font-size: 26px;
+  color: var(--cream);
+}
+
+.nav a {
+  margin-left: 18px;
+  color: var(--sand);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  color: var(--cream);
+  text-decoration: underline;
+}
+
+/* ---------- Section titles ---------- */
+.section-title {
+  color: var(--brown);
+  margin: 35px 0 15px;
+}
+
+/* ---------- Cards (products and reviews) ---------- */
+.row {
+  display: flex;
+  gap: 16px;
+}
+
+.card {
+  flex: 1;
+  background: var(--sand);
+  border-top: 5px solid var(--terracotta);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(137, 78, 63, 0.2);
+}
+
+.card h3 {
+  margin: 10px 0 6px;
+}
+
+.desc {
+  margin: 4px 0;
+}
+
+.price {
+  margin: 8px 0 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--brown);
+}
+
+/* ---------- Badges ---------- */
+.badge {
+  float: right;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--cream);
+}
+
+.badge-bestseller {
+  background: var(--brown);
+}
+
+.badge-new {
+  background: var(--clay);
+}
+
+/* ---------- Reviews ---------- */
+.review {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--terracotta);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+.reviewer {
+  margin: 0 0 4px;
+  font-weight: bold;
+}
+
+.stars {
+  color: var(--terracotta);
+  margin-left: 6px;
+}
+
+/* ---------- Order box ---------- */
+.order-box {
+  margin-top: 35px;
+  background: var(--sand);
+  border: 2px dashed var(--terracotta);
+  border-radius: 20px;
+  padding: 10px 24px 20px;
+}
+
+.order-box h2 {
+  color: var(--brown);
+}
+
+.total {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--brown);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  margin-top: 35px;
+  background: var(--clay);
+  color: var(--cream);
+  border-radius: 20px;
+  padding: 10px 40px 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer h3 {
+  color: var(--sand);
+}
