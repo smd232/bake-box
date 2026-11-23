@@ -5,7 +5,7 @@ function BrownieCard() {
 
   return (
     <div className="card">
-      <Badge />
+      <Badge text="Bestseller" />
       <h3>🍫 Chocolate Brownies</h3>
       <p className="desc">Box of 6, fudgy and warm</p>
       <p className="price">Rs {price}</p>
